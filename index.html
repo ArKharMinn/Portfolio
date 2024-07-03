@@ -245,30 +245,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="portfolio.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.itemBar .nav-link').click(function(){
-       $(this).addClass('bg-primary rounded text-white').parent().siblings().find('.nav-link').removeClass('bg-primary rounded text-white');
-     });
-     $('.parentBar p').click(function(){
-      $parentNode = $(this).text()
-      $('.parentBar p').removeClass('border-bottom border-primary');
-      if($parentNode == "All"){
-        $(this).addClass('border-bottom border-3 border-primary')
-        $('.client').removeClass('d-none')
-         $('.admin').removeClass('d-none')
-      }else if($parentNode == "Frontend"){
-        $(this).addClass('border-bottom border-3 border-primary')
-         $('.admin').addClass('d-none')
-          $('.client').removeClass('d-none')
-      }else if($parentNode == "Backend"){
-        $(this).addClass('border-bottom border-3 border-primary')
-         $('.client').addClass('d-none')
-          $('.admin').removeClass('d-none')
-      }
-     });
-  });
-</script>
 </html>
